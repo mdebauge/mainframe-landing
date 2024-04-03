@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between h-20 px-3 sm:px-9 bg-background">
+    <header className="fixed top-0 left-0 right-0 flex items-center justify-between h-20 px-3 sm:px-9 bg-background">
       <Link href="/">Mainframe</Link>
       <nav>
         <ul className="flex items-center gap-x-6">

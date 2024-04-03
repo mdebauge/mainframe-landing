@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex p-24 bg-background gap-x-6">
+    <main className="flex h-full mt-32 p-24 bg-background gap-x-12">
       <div className="basis-2/4">
         <h1 className="text-6xl font-bold mb-4">
           Simplify your data ecosystem
@@ -14,12 +14,12 @@ export default function Home() {
         </h2>
         <Button className="grow-0">Try it out</Button>
       </div>
-      <div className="basis-2/4">
+      <div className="basis-2/4 flex justify-center items-center">
         <Image
-          src="/vercel.svg"
+          src="/mainframe-monitor.svg"
           alt="Mainframe hero"
-          width={500}
-          height={500}
+          width={300}
+          height={300}
         />
       </div>
     </main>
