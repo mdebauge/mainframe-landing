@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { ModeToggle } from "./mode-toggle";
+import { Button } from "./ui/button";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between h-14 px-3 sm:px-9 bg-background">
+    <header className="flex items-center justify-between h-20 px-3 sm:px-9 bg-background">
       <Link href="/">Mainframe</Link>
       <nav>
         <ul className="flex items-center gap-x-6">
@@ -11,7 +12,7 @@ export default function Header() {
             <Link href="/">Log in</Link>
           </li>
           <li>
-            <Link href="/">Sign up</Link>
+            <Button>Sign up</Button>
           </li>
           <li>
             <ModeToggle />
