@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Step from "@/components/step";
+
+import connectData from "../../public/connect-data.png";
+import database from "../../public/database.png";
+import api from "../../public/api.png";
+import arrow from "../../public/arrow.svg";
 
 export default function Home() {
   return (
@@ -25,11 +31,42 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <h2 className="text-4xl text-center font-medium mb-8">How it works</h2>
-        <p className="text-lg text-center">
+        <h2 className="text-4xl text-center font-medium mb-4">How it works</h2>
+        <p className="text-md text-center">
           Learn how easy it is to connect your data and start building your app
           within minutes
         </p>
+        <div className="flex gap-x-8 w-full mt-10">
+          <Step
+            image={connectData}
+            header="Connect your data"
+            blurb="Easily connect and bring in data from multiple sources."
+          />
+          <Image
+            className="-mt-28"
+            src={arrow}
+            alt="Arrow"
+            width={50}
+            height={50}
+          />
+          <Step
+            image={database}
+            header="Assemble customized databases"
+            blurb="View, transform, and create databases with your combined data."
+          />
+          <Image
+            className="-mt-28"
+            src={arrow}
+            alt="Arrow"
+            width={50}
+            height={50}
+          />
+          <Step
+            image={api}
+            header="Build your app"
+            blurb="Our API and playground make it quick and easy to immediately start building your next app or custom component."
+          />
+        </div>
       </section>
     </main>
   );
