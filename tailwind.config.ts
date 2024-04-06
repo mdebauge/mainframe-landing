@@ -59,7 +59,7 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       dropShadow: {
-        brutalist: "2px 2px 0 hsl(var(--primary))",
+        brutalist: "2px 2px 0 black",
       },
       keyframes: {
         "accordion-down": {

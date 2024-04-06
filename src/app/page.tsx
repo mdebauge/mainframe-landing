@@ -6,89 +6,88 @@ import monitor from "../../public/mainframe-monitor.svg";
 import connectData from "../../public/connect-data.png";
 import database from "../../public/database.png";
 import api from "../../public/api.png";
-import arrow from "../../public/arrow.svg";
 import notionLogo from "../../public/notion-logo.png";
+import googleCalendarLogo from "../../public/google-calendar-logo.png";
+import githubLogo from "../../public/github-logo.png";
+import posthogLogo from "../../public/posthog-logo.png";
+import pelotonLogo from "../../public/peloton-logo.jpg";
+import togglLogo from "../../public/toggl-logo.png";
+import ouraLogo from "../../public/oura-logo.png";
+import zoteroLogo from "../../public/zotero-logo.svg";
+
+type BlobProps = {
+  delay: string;
+};
+
+export function Blob({ delay }: BlobProps) {
+  return (
+    <div
+      className={`absolute top-1/2 left-1/2 w-[32rem] h-[32rem] bg-cyan-500 opacity-25 rounded-full filter blur-2xl animate-blob ${delay}`}
+    ></div>
+  );
+}
+
+type OrbProps = {
+  image: JSX.Element;
+  position: string;
+};
+
+export function Orb({ image, position }: OrbProps) {
+  return (
+    <li
+      className={`absolute w-16 h-16 aspect-square rounded-full bg-white ${position}`}
+    >
+      <div className="grid items-center w-full h-full bg-white rounded-full overflow-hidden p-3 border-2 border-black drop-shadow-brutalist animate-hold-position">
+        <Image src={image} alt="Datasource logo" />
+      </div>
+    </li>
+  );
+}
 
 export default function Home() {
   return (
     <main className="p-24 bg-background">
       <section className="flex h-[65vh] mb-20 gap-x-12">
         <div className="basis-2/5 flex flex-col justify-center items-start">
-          <h1 className="text-6xl font-bold mb-4">
+          <h1 className="text-6xl font-bold mb-6">
             Simplify your
             <br />
             data ecosystem
           </h1>
-          <p className="text-xl mb-4">
+          <p className="text-xl mb-6">
             Connect and transform your data from any app or data source. Build
             apps with all your data in one tool.
           </p>
-          <Button className="grow-0">Try it out</Button>
+          <Button size="lg">Try it out</Button>
         </div>
         <div className="basis-3/5 relative">
-          <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-cyan-500 opacity-25 rounded-full filter blur-2xl animate-blob"></div>
-          <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-cyan-500 opacity-25 rounded-full filter blur-2xl animate-blob animation-delay-2000"></div>
-          <div className="w-64 h-64 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <div className="absolute w-64 h-64">
-              <Image src={monitor} alt="Mainframe hero" />
+          <Blob />
+          <Blob delay="animation-delay-2000" />
+          <div className="w-80 h-80 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div className="absolute w-80 h-80">
+              <Image className="h-full" src={monitor} alt="Mainframe hero" />
             </div>
-            <ul className="absolute grid place-items-center w-64 h-64 list-none origin-center animate-orbit">
-              <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist translate-x-72">
-                <Image
-                  className="animate-hold-position"
-                  src={notionLogo}
-                  alt="Notion logo"
-                />
-              </li>
-              <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist translate-x-52 translate-y-52">
-                <Image
-                  className="animate-hold-position"
-                  src={notionLogo}
-                  alt="Notion logo"
-                />
-              </li>
-              <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist translate-y-72">
-                <Image
-                  className="animate-hold-position"
-                  src={notionLogo}
-                  alt="Notion logo"
-                />
-              </li>
-              <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist -translate-x-52 translate-y-52">
-                <Image
-                  className="animate-hold-position"
-                  src={notionLogo}
-                  alt="Notion logo"
-                />
-              </li>
-              <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist -translate-x-72">
-                <Image
-                  className="animate-hold-position"
-                  src={notionLogo}
-                  alt="Notion logo"
-                />
-              </li>
-              <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist -translate-x-52 -translate-y-52">
-                <Image
-                  className="animate-hold-position"
-                  src={notionLogo}
-                  alt="Notion logo"
-                />
-              </li>
-              <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist -translate-y-72">
-                <Image
-                  className="animate-hold-position"
-                  src={notionLogo}
-                  alt="Notion logo"
-                />
-              </li>
-              <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist translate-x-52 -translate-y-52">
-                <Image
-                  className="animate-hold-position"
-                  src={notionLogo}
-                  alt="Notion logo"
-                />
-              </li>
+            <ul className="absolute grid place-items-center w-80 h-80 list-none origin-center animate-orbit">
+              <Orb image={notionLogo} position="translate-x-72" />
+              <Orb
+                image={googleCalendarLogo}
+                position="translate-x-52 translate-y-52"
+              />
+              <Orb image={pelotonLogo} position="translate-y-72" />
+              <Orb
+                image={githubLogo}
+                position="-translate-x-52 translate-y-52"
+              />
+              <Orb image={zoteroLogo} position="-translate-x-72" />
+              <Orb
+                image={posthogLogo}
+                position="-translate-x-52 -translate-y-52"
+              />
+              <Orb image={ouraLogo} position="-translate-y-72" />
+              <Orb
+                image={togglLogo}
+                position="translate-x-52 -translate-y-52"
+              />
             </ul>
           </div>
         </div>

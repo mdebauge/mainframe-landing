@@ -5,12 +5,12 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 flex items-center justify-between h-16 px-3 sm:px-24 bg-background/80 backdrop-blur-xl z-10">
+    <header className="fixed top-0 left-0 right-0 flex items-center justify-between h-16 px-3 sm:px-24 bg-background/60 backdrop-blur-xl z-10">
       <Link href="/">
         <svg
           className="fill-primary"
           width="174"
-          height="25"
+          height="24"
           viewBox="0 0 174 25"
           xmlns="http://www.w3.org/2000/svg"
         >
