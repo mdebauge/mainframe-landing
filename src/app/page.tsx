@@ -13,7 +13,9 @@ export default function Home() {
       <section className="flex h-full mt-32 mb-16 gap-x-12">
         <div className="basis-2/4">
           <h1 className="text-6xl font-bold mb-4">
-            Simplify your data ecosystem
+            Simplify your
+            <br />
+            data ecosystem
           </h1>
           <p className="text-xl mb-4">
             Connect and transform your data from any app or data source. Build
