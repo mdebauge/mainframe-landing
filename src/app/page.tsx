@@ -23,13 +23,19 @@ export default function Home() {
           </p>
           <Button className="grow-0">Try it out</Button>
         </div>
-        <div className="basis-2/4 flex justify-center items-center">
-          <Image
-            src="/mainframe-monitor.svg"
-            alt="Mainframe hero"
-            width={300}
-            height={300}
-          />
+        <div className="basis-2/4 relative w-full">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-cyan-500 opacity-20 rounded-full filter blur-2xl"></div>
+          <div className="absolute top-0 right-1/4 w-96 h-96 bg-cyan-500 opacity-20 rounded-full filter blur-2xl"></div>
+          <div className="absolute bottom-0 left-1/3 w-96 h-96 bg-cyan-500 opacity-20 rounded-full filter blur-2xl"></div>
+          <div className="relative z-10 flex items-center justify-center">
+            <Image
+              className="relative z-10"
+              src="/mainframe-monitor.svg"
+              alt="Mainframe hero"
+              width={300}
+              height={300}
+            />
+          </div>
         </div>
       </section>
       <section>
