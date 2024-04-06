@@ -40,7 +40,7 @@ export default function Home() {
                   alt="Notion logo"
                 />
               </li>
-              <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist translate-x-48 translate-y-48">
+              <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist translate-x-52 translate-y-52">
                 <Image
                   className="animate-hold-position"
                   src={notionLogo}
@@ -54,7 +54,7 @@ export default function Home() {
                   alt="Notion logo"
                 />
               </li>
-              <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist -translate-x-48 translate-y-48">
+              <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist -translate-x-52 translate-y-52">
                 <Image
                   className="animate-hold-position"
                   src={notionLogo}
@@ -68,7 +68,7 @@ export default function Home() {
                   alt="Notion logo"
                 />
               </li>
-              <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist -translate-x-48 -translate-y-48">
+              <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist -translate-x-52 -translate-y-52">
                 <Image
                   className="animate-hold-position"
                   src={notionLogo}
@@ -82,7 +82,7 @@ export default function Home() {
                   alt="Notion logo"
                 />
               </li>
-              <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist translate-x-48 -translate-y-48">
+              <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist translate-x-52 -translate-y-52">
                 <Image
                   className="animate-hold-position"
                   src={notionLogo}
