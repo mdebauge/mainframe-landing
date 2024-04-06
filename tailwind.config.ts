@@ -70,6 +70,16 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        orbit: {
+          "100%": {
+            rotate: "1turn",
+          },
+        },
+        "hold-position": {
+          "100%": {
+            rotate: "-1turn",
+          },
+        },
         blob: {
           "0%": {
             transform: "translate(-40%, -40%) scale(1)",
@@ -92,6 +102,8 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         blob: "blob 11s infinite",
+        orbit: "orbit 60s linear infinite",
+        "hold-position": "hold-position 60s linear infinite",
       },
     },
   },
