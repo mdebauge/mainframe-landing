@@ -31,8 +31,10 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <h2 className="text-4xl text-center font-medium mb-4">How it works</h2>
-        <p className="text-md text-center">
+        <h2 className="text-4xl text-center font-semibold mb-2">
+          How it works
+        </h2>
+        <p className="text-lg text-center">
           Learn how easy it is to connect your data and start building your app
           within minutes
         </p>
