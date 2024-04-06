@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 flex items-center justify-between h-16 px-3 sm:px-24 bg-background/80 backdrop-blur-xl">
+    <header className="fixed top-0 left-0 right-0 flex items-center justify-between h-16 px-3 sm:px-24 bg-background/80 backdrop-blur-xl z-10">
       <Link href="/">
         <svg
           className="fill-primary"
