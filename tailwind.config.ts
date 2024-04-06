@@ -58,6 +58,9 @@ const config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      dropShadow: {
+        brutalist: "2px 2px 0 hsl(var(--primary))",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -69,19 +72,19 @@ const config = {
         },
         blob: {
           "0%": {
-            transform: "translate(-45%, -45%) scale(1)",
+            transform: "translate(-40%, -40%) scale(1)",
           },
           "25%": {
-            transform: "translate(-55%, -55%) scale(1.1)",
+            transform: "translate(-60%, -60%) scale(1.1)",
           },
           "50%": {
-            transform: "translate(-45%, -55%) scale(1)",
+            transform: "translate(-40%, -60%) scale(1)",
           },
           "75%": {
-            transform: "translate(-55%, -45%) scale(0.9)",
+            transform: "translate(-60%, -40%) scale(0.9)",
           },
           "100%": {
-            transform: "translate(-45%, -45%) scale(1)",
+            transform: "translate(-40%, -40%) scale(1)",
           },
         },
       },

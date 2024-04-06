@@ -2,15 +2,17 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Step from "@/components/step";
 
+import monitor from "../../public/mainframe-monitor.svg";
 import connectData from "../../public/connect-data.png";
 import database from "../../public/database.png";
 import api from "../../public/api.png";
 import arrow from "../../public/arrow.svg";
+import notionLogo from "../../public/notion-logo.png";
 
 export default function Home() {
   return (
     <main className="p-24 bg-background">
-      <section className="flex h-full mt-32 mb-16 gap-x-12">
+      <section className="flex h-[80vh] pt-36 gap-x-12">
         <div className="basis-2/4">
           <h1 className="text-6xl font-bold mb-4">
             Simplify your
@@ -23,18 +25,39 @@ export default function Home() {
           </p>
           <Button className="grow-0">Try it out</Button>
         </div>
-        <div className="basis-2/4 relative w-full">
+        <div className="basis-2/4 relative">
           <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-cyan-500 opacity-25 rounded-full filter blur-2xl animate-blob"></div>
           <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-cyan-500 opacity-25 rounded-full filter blur-2xl animate-blob animation-delay-2000"></div>
-          <div className="relative z-10 flex items-center justify-center animation-delay-4000">
-            <Image
-              className="relative z-10"
-              src="/mainframe-monitor.svg"
-              alt="Mainframe hero"
-              width={300}
-              height={300}
-            />
+
+          <div className="absolute w-48 h-48 -translate-x-16 -translate-y-16">
+            <Image src={monitor} alt="Mainframe hero" />
           </div>
+          <ul className="absolute list-none">
+            <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist translate-x-60">
+              <Image src={notionLogo} alt="Notion logo" />
+            </li>
+            <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist translate-x-48 translate-y-48">
+              <Image src={notionLogo} alt="Notion logo" />
+            </li>
+            <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist translate-y-60">
+              <Image src={notionLogo} alt="Notion logo" />
+            </li>
+            <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist -translate-x-48 translate-y-48">
+              <Image src={notionLogo} alt="Notion logo" />
+            </li>
+            <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist -translate-x-60">
+              <Image src={notionLogo} alt="Notion logo" />
+            </li>
+            <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist -translate-x-48 -translate-y-48">
+              <Image src={notionLogo} alt="Notion logo" />
+            </li>
+            <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist -translate-y-60">
+              <Image src={notionLogo} alt="Notion logo" />
+            </li>
+            <li className="absolute w-16 h-16 aspect-square rounded-full overflow-hidden p-3 border border-primary bg-white drop-shadow-brutalist translate-x-48 -translate-y-48">
+              <Image src={notionLogo} alt="Notion logo" />
+            </li>
+          </ul>
         </div>
       </section>
       <section>
