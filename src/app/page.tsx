@@ -35,7 +35,7 @@ type OrbProps = {
 export function Orb({ image, position }: OrbProps) {
   return (
     <li
-      className={`absolute w-16 h-16 aspect-square rounded-full bg-white ${position}`}
+      className={`absolute w-[4.5rem] h-[4.5rem] aspect-square rounded-full bg-white ${position}`}
     >
       <div className="grid items-center w-full h-full bg-white rounded-full overflow-hidden p-3 border-2 border-black drop-shadow-brutalist animate-hold-position">
         <Image src={image} alt="Datasource logo" />
