@@ -27,6 +27,16 @@ export default function Header() {
       <nav>
         <ul className="flex items-center gap-x-4">
           <li>
+            <Button variant="link">Docs</Button>
+          </li>
+          <li>
+            <Button variant="link">Community</Button>
+          </li>
+        </ul>
+      </nav>
+      <nav>
+        <ul className="flex items-center gap-x-4">
+          <li>
             <Button variant="ghost">Log in</Button>
           </li>
           <li>

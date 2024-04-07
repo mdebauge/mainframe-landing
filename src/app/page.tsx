@@ -47,7 +47,7 @@ export function Orb({ image, position }: OrbProps) {
 export default function Home() {
   return (
     <main className="p-24 bg-background">
-      <section className="flex h-[65vh] mb-20 gap-x-12">
+      <section className="flex h-[65vh] mb-24 gap-x-12">
         <div className="basis-2/5 flex flex-col justify-center items-start">
           <h1 className="text-6xl font-bold mb-6">
             Simplify your
@@ -58,7 +58,10 @@ export default function Home() {
             Connect and transform your data from any app or data source. Build
             apps with all your data in one tool.
           </p>
-          <Button size="lg">Try it out</Button>
+          <div className="flex gap-x-2">
+            <Button size="lg">Try it out</Button>
+            <Button variant="link">Read our Docs</Button>
+          </div>
         </div>
         <div className="basis-3/5 relative">
           <Blob />
@@ -92,7 +95,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="mb-20">
         <h2 className="text-4xl text-center font-semibold mb-2">
           How it works
         </h2>

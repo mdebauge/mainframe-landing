@@ -2,10 +2,10 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="flex justify-center pb-2">
+    <footer className="flex justify-center pb-4">
       <div className="flex flex-col gap-x-4">
         <small className="">© 2024 Mainframe. All rights reserved.</small>
-        <div className="flex gap-x-1 text-sm text-muted-foreground">
+        <div className="flex justify-center gap-x-1 text-sm text-muted-foreground">
           <small>
             <Link href="/">Privacy Policy</Link>
           </small>
