@@ -1,7 +1,7 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 type StepProps = {
-  image: JSX.Element;
+  image: StaticImageData;
   header: string;
   blurb: string;
 };
