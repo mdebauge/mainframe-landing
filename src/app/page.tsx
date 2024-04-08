@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Step from "@/components/step";
 
 import monitor from "../../public/mainframe-monitor.svg";
@@ -16,7 +16,7 @@ import ouraLogo from "../../public/oura-logo.png";
 import zoteroLogo from "../../public/zotero-logo.svg";
 
 type BlobProps = {
-  delay: string;
+  delay?: string;
 };
 
 export function Blob({ delay }: BlobProps) {
@@ -28,7 +28,7 @@ export function Blob({ delay }: BlobProps) {
 }
 
 type OrbProps = {
-  image: JSX.Element;
+  image: StaticImageData;
   position: string;
 };
 
