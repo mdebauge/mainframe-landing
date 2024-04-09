@@ -19,7 +19,7 @@ type BlobProps = {
   delay?: string;
 };
 
-export function Blob({ delay }: BlobProps) {
+function Blob({ delay }: BlobProps) {
   return (
     <div
       className={`absolute top-1/2 left-1/2 w-[32rem] h-[32rem] bg-cyan-500 opacity-25 rounded-full filter blur-2xl animate-blob ${delay}`}
@@ -32,7 +32,7 @@ type OrbProps = {
   position: string;
 };
 
-export function Orb({ image, position }: OrbProps) {
+function Orb({ image, position }: OrbProps) {
   return (
     <li
       className={`absolute w-[4.5rem] h-[4.5rem] aspect-square rounded-full bg-white ${position}`}
