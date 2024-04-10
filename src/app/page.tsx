@@ -22,7 +22,7 @@ type BlobProps = {
 function Blob({ delay }: BlobProps) {
   return (
     <div
-      className={`absolute top-1/2 left-1/2 w-[32rem] h-[32rem] bg-cyan-500 opacity-25 rounded-full filter blur-2xl animate-blob ${delay}`}
+      className={`absolute top-1/2 left-1/2 w-72 md:w-[32rem] h-72 md:h-[32rem] bg-cyan-500 opacity-25 rounded-full filter blur-2xl animate-blob ${delay}`}
     ></div>
   );
 }
@@ -46,50 +46,62 @@ function Orb({ image, position }: OrbProps) {
 
 export default function Home() {
   return (
-    <main className="p-24 bg-background">
-      <section className="flex h-[65vh] mb-24 gap-x-12">
-        <div className="basis-2/5 flex flex-col justify-center items-start">
-          <h1 className="text-6xl font-bold mb-6">
+    <main className="p-6 md:p-24 bg-background">
+      <section className="flex flex-col md:flex-row h-[65vh] mt-20 md:mt-0 mb-24 gap-x-12">
+        <div className="md:basis-2/5 flex flex-col justify-center items-start">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-center md:text-left w-full">
             Simplify your
             <br />
             data ecosystem
           </h1>
-          <p className="text-xl mb-6">
+          <p className="text-xl mb-6 text-center md:text-left w-full">
             Connect and transform your data from any app or data source. Build
             apps with all your data in one tool.
           </p>
-          <div className="flex gap-x-2">
+          <div className="flex gap-x-2 gap-y-4 flex-col md:flex-row items-center w-full">
             <Button size="lg">Try it out</Button>
             <Button variant="link">Read our Docs</Button>
           </div>
         </div>
-        <div className="basis-3/5 relative">
+        <div className="md:basis-3/5 relative w-full h-full md:w-auto md:h-auto">
           <Blob />
           <Blob delay="animation-delay-2000" />
-          <div className="w-80 h-80 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <div className="absolute w-80 h-80">
+          <div className="w-40 md:w-80 h-40 md:h-80 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div className="absolute w-40 md:w-80 h-40 md:h-80">
               <Image className="h-full" src={monitor} alt="Mainframe hero" />
             </div>
-            <ul className="absolute grid place-items-center w-80 h-80 list-none origin-center animate-orbit">
-              <Orb image={notionLogo} position="translate-x-72" />
+            <ul className="absolute grid place-items-center w-40 md:w-80 h-40 md:h-80 list-none origin-center animate-orbit">
+              <Orb
+                image={notionLogo}
+                position="translate-x-44 md:translate-x-72"
+              />
               <Orb
                 image={googleCalendarLogo}
-                position="translate-x-52 translate-y-52"
+                position="translate-x-32 translate-y-32 md:translate-x-52 md:translate-y-52"
               />
-              <Orb image={pelotonLogo} position="translate-y-72" />
+              <Orb
+                image={pelotonLogo}
+                position="translate-y-[11.5rem] md:translate-y-72"
+              />
               <Orb
                 image={githubLogo}
-                position="-translate-x-52 translate-y-52"
+                position="-translate-x-32 translate-y-32 md:-translate-x-52 md:translate-y-52"
               />
-              <Orb image={zoteroLogo} position="-translate-x-72" />
+              <Orb
+                image={zoteroLogo}
+                position="-translate-x-[11.5rem] md:-translate-x-72"
+              />
               <Orb
                 image={posthogLogo}
-                position="-translate-x-52 -translate-y-52"
+                position="-translate-x-32 -translate-y-32 md:-translate-x-52 md:-translate-y-52"
               />
-              <Orb image={ouraLogo} position="-translate-y-72" />
+              <Orb
+                image={ouraLogo}
+                position="-translate-y-[11.5rem] md:-translate-y-72"
+              />
               <Orb
                 image={togglLogo}
-                position="translate-x-52 -translate-y-52"
+                position="translate-x-32 -translate-y-32 md:translate-x-52 md:-translate-y-52"
               />
             </ul>
           </div>
@@ -103,14 +115,14 @@ export default function Home() {
           Learn how easy it is to connect your data and start building your app
           within minutes
         </p>
-        <div className="flex gap-x-8 w-full mt-10">
+        <div className="flex flex-col md:flex-row gap-x-8 gap-y-24 w-full mt-10">
           <Step
             image={connectData}
             header="Connect your data"
             blurb="Easily connect and bring in data from multiple sources."
           />
           <svg
-            className="fill-primary mt-24"
+            className="fill-primary mt-24 hidden md:block"
             width="150"
             height="46"
             viewBox="0 0 106 46"
@@ -125,7 +137,7 @@ export default function Home() {
             blurb="View, transform, and create databases with your combined data."
           />
           <svg
-            className="fill-primary mt-24"
+            className="fill-primary mt-24 hidden md:block"
             width="150"
             height="46"
             viewBox="0 0 106 46"
