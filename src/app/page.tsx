@@ -22,7 +22,7 @@ type BlobProps = {
 function Blob({ delay }: BlobProps) {
   return (
     <div
-      className={`absolute top-1/2 left-1/2 w-72 md:w-[32rem] h-72 md:h-[32rem] bg-cyan-500 opacity-25 rounded-full filter blur-2xl animate-blob ${delay}`}
+      className={`absolute top-1/2 left-1/2 w-72 md:w-[24rem] xl:w-[32rem] h-72 md:h-[24rem] xl:h-[32rem] bg-cyan-500 opacity-25 rounded-full filter blur-2xl animate-blob ${delay}`}
     ></div>
   );
 }
@@ -46,10 +46,10 @@ function Orb({ image, position }: OrbProps) {
 
 export default function Home() {
   return (
-    <main className="p-6 md:p-24 bg-background">
-      <section className="flex flex-col md:flex-row h-[65vh] mt-20 md:mt-0 mb-24 gap-x-12">
+    <main className="p-6 md:p-16 xl:p-24 bg-background">
+      <section className="flex flex-col md:flex-row h-[65vh] mt-20 xl:mt-0 mb-24 gap-x-12">
         <div className="md:basis-2/5 flex flex-col justify-center items-start">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-center md:text-left w-full">
+          <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold mb-6 text-center md:text-left w-full">
             Simplify your
             <br />
             data ecosystem
@@ -66,42 +66,42 @@ export default function Home() {
         <div className="md:basis-3/5 relative w-full h-full md:w-auto md:h-auto">
           <Blob />
           <Blob delay="animation-delay-2000" />
-          <div className="w-40 md:w-80 h-40 md:h-80 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <div className="absolute w-40 md:w-80 h-40 md:h-80">
+          <div className="w-40 xl:w-80 h-40 xl:h-80 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div className="absolute w-40 md:w-60 xl:w-80 h-40 md:h-60 xl:h-80">
               <Image className="h-full" src={monitor} alt="Mainframe hero" />
             </div>
-            <ul className="absolute grid place-items-center w-40 md:w-80 h-40 md:h-80 list-none origin-center animate-orbit">
+            <ul className="absolute grid place-items-center w-40 md:w-60 xl:w-80 h-40 md:h-60 xl:h-80 list-none origin-center animate-orbit">
               <Orb
                 image={notionLogo}
-                position="translate-x-44 md:translate-x-72"
+                position="translate-x-44 md:translate-x-56 xl:translate-x-72"
               />
               <Orb
                 image={googleCalendarLogo}
-                position="translate-x-32 translate-y-32 md:translate-x-52 md:translate-y-52"
+                position="translate-x-32 translate-y-32 md:translate-x-40 md:translate-y-40 xl:translate-x-52 xl:translate-y-52"
               />
               <Orb
                 image={pelotonLogo}
-                position="translate-y-[11.5rem] md:translate-y-72"
+                position="translate-y-[11.5rem] md:translate-y-56 xl:translate-y-72"
               />
               <Orb
                 image={githubLogo}
-                position="-translate-x-32 translate-y-32 md:-translate-x-52 md:translate-y-52"
+                position="-translate-x-32 translate-y-32 md:-translate-x-40 md:translate-y-40 xl:-translate-x-52 xl:translate-y-52"
               />
               <Orb
                 image={zoteroLogo}
-                position="-translate-x-[11.5rem] md:-translate-x-72"
+                position="-translate-x-[11.5rem] md:-translate-x-56 xl:-translate-x-72"
               />
               <Orb
                 image={posthogLogo}
-                position="-translate-x-32 -translate-y-32 md:-translate-x-52 md:-translate-y-52"
+                position="-translate-x-32 -translate-y-32 md:-translate-x-40 md:-translate-y-40 xl:-translate-x-52 xl:-translate-y-52"
               />
               <Orb
                 image={ouraLogo}
-                position="-translate-y-[11.5rem] md:-translate-y-72"
+                position="-translate-y-[11.5rem] md:-translate-y-56 xl:-translate-y-72"
               />
               <Orb
                 image={togglLogo}
-                position="translate-x-32 -translate-y-32 md:translate-x-52 md:-translate-y-52"
+                position="translate-x-32 -translate-y-32 md:translate-x-40 md:-translate-y-40  xl:translate-x-52 xl:-translate-y-52"
               />
             </ul>
           </div>
