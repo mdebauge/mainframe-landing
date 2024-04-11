@@ -1,19 +1,9 @@
-"use client";
-
 import Link from "next/link";
 import { ModeToggle } from "./mode-toggle";
 import { Button } from "./ui/button";
-import { useState } from "react";
-import MobileMenuButton from "./mobile-menu-button";
-import MobileDrawer from "./mobile-drawer";
+import MobileMenu from "./mobile-menu";
 
 export default function Header() {
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
-  const handleDrawerToggle = () => {
-    setIsDrawerOpen(!isDrawerOpen);
-  };
-
   return (
     <header>
       <nav className="fixed top-0 left-0 right-0 flex items-center justify-between h-16 px-6 md:px-16 xl:px-24 bg-background/60 backdrop-blur-xl z-10">
@@ -55,15 +45,11 @@ export default function Header() {
             <li className="hidden md:block">
               <ModeToggle />
             </li>
-            <li>
-              <MobileMenuButton
-                isOpen={isDrawerOpen}
-                onClick={handleDrawerToggle}
-              />
+            <li className="md:hidden">
+              <MobileMenu />
             </li>
           </ul>
         </div>
-        <MobileDrawer isOpen={isDrawerOpen} onClose={handleDrawerToggle} />
       </nav>
     </header>
   );
