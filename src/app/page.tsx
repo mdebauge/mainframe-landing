@@ -63,7 +63,7 @@ export default function Home() {
             <Button variant="link">Read our Docs</Button>
           </div>
         </div>
-        <div className="md:basis-3/5 relative w-full h-full md:w-auto md:h-auto">
+        <div className="hidden md:block md:basis-3/5 relative w-full h-full md:w-auto md:h-auto">
           <Blob />
           <Blob delay="animation-delay-2000" />
           <div className="w-40 xl:w-80 h-40 xl:h-80 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
