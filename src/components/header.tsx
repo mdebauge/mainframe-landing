@@ -9,7 +9,7 @@ export default function Header() {
       <nav className="fixed top-0 left-0 right-0 flex items-center justify-between h-16 px-6 md:px-16 xl:px-24 bg-background/60 backdrop-blur-xl z-10">
         <Link href="/">
           <svg
-            className="fill-primary h-4 md:h-[24px]"
+            className="fill-primary h-[18px] md:h-[24px]"
             height="24"
             viewBox="0 0 174 25"
             xmlns="http://www.w3.org/2000/svg"
