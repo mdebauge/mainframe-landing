@@ -46,8 +46,8 @@ function Orb({ image, position }: OrbProps) {
 
 export default function Home() {
   return (
-    <main className="p-6 md:p-16 xl:p-24 bg-background">
-      <section className="flex flex-col md:flex-row h-[65vh] mt-20 xl:mt-0 mb-24 gap-x-12">
+    <main className="p-6 md:p-16 xl:p-24 bg-background overflow-hidden">
+      <section className="flex flex-col md:flex-row md:h-[65vh] mt-20 xl:mt-0 md:mb-24 gap-x-12">
         <div className="md:basis-2/5 flex flex-col justify-center items-start">
           <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold mb-6 text-center md:text-left w-full">
             Simplify your
@@ -60,10 +60,12 @@ export default function Home() {
           </p>
           <div className="flex gap-x-2 gap-y-4 flex-col md:flex-row items-center w-full">
             <Button size="lg">Try it out</Button>
-            <Button variant="link">Read our Docs</Button>
+            <Button className="hidden md:block" variant="link">
+              Read our Docs
+            </Button>
           </div>
         </div>
-        <div className="hidden md:block md:basis-3/5 relative w-full h-full md:w-auto md:h-auto">
+        <div className="md:basis-3/5 relative w-full h-[36rem] mdh-full md:w-auto md:h-auto">
           <Blob />
           <Blob delay="animation-delay-2000" />
           <div className="w-40 xl:w-80 h-40 xl:h-80 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
