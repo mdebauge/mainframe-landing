@@ -42,7 +42,7 @@ export default function Header() {
             <li>
               <Button>Log in</Button>
             </li>
-            <li className="hidden md:block">
+            <li>
               <ModeToggle />
             </li>
             <li className="md:hidden">
