@@ -1,7 +1,13 @@
 import { X } from "lucide-react";
 import { Button } from "./ui/button";
 
-export default function MobileDrawer({ isOpen, onClose }) {
+export default function MobileDrawer({
+  isOpen,
+  onClose,
+}: {
+  isOpen: boolean;
+  onClose: () => void;
+}) {
   return (
     <div
       className={`fixed flex flex-col justify-center items-center z-10 top-0 right-0 py-8 w-full bg-background transition-transform duration-200 transform translate-y-[64px] ${
