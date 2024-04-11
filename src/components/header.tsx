@@ -33,7 +33,7 @@ export default function Header() {
               <Link href="https://discord.gg/HUS4y59Dxw">
                 <Button variant="ghost">
                   <svg
-                    className="fill-primary h-[18px] md:h-[24px]"
+                    className="fill-primary w-[16px] h-[16px]"
                     width="16"
                     height="16"
                     viewBox="0 0 16 16"
