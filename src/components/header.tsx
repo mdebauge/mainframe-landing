@@ -37,10 +37,14 @@ export default function Header() {
         <div>
           <ul className="flex items-center gap-x-2">
             <li className="hidden md:block">
-              <Button variant="ghost">Sign up</Button>
+              <Link href="https://app.mainframe.so">
+                <Button variant="ghost">Log in</Button>
+              </Link>
             </li>
             <li>
-              <Button>Log in</Button>
+              <Link href="https://app.mainframe.so/setup">
+                <Button>Sign up</Button>
+              </Link>
             </li>
             <li>
               <ModeToggle />
