@@ -6,7 +6,7 @@ import MobileMenu from "./mobile-menu";
 export default function Header() {
   return (
     <header>
-      <nav className="fixed top-0 left-0 right-0 flex items-center justify-between h-16 px-6 md:px-16 xl:px-24 bg-background/60 backdrop-blur-xl z-10">
+      <nav className="fixed top-0 left-0 right-0 flex items-center justify-between h-16 px-6 md:px-16 xl:px-24 bg-background md:bg-background/60 md:backdrop-blur-xl z-10">
         <Link href="/">
           <svg
             className="fill-primary h-[18px] md:h-[24px]"
