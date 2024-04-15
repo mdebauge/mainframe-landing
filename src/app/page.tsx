@@ -71,10 +71,10 @@ export default function Home() {
           </div>
 
           <div className="relative h-[45vw] w-full mt-28">
-            <div className="absolute w-4/6 -rotate-[5deg] -left-[5%] drop-shadow-xl">
+            <div className="absolute w-9/12 -rotate-[5deg] -left-[5%] drop-shadow-[8px_8px_25px_rgba(0,0,0,0.06)]">
               <Image src={dataScreen} alt="Data screenshot" />
             </div>
-            <div className="absolute w-4/6 rotate-[9deg] -right-[8%] drop-shadow-xl">
+            <div className="absolute w-9/12 rotate-[9deg] -right-[8%] drop-shadow-[8px_8px_25px_rgba(0,0,0,0.06)]">
               <Image src={playgroundScreen} alt="Playground screenshot" />
             </div>
           </div>
