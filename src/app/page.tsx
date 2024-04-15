@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Image, { StaticImageData } from "next/image";
 import Step from "@/components/step";
@@ -14,6 +16,8 @@ import pelotonLogo from "../../public/peloton-logo.jpg";
 import togglLogo from "../../public/toggl-logo.png";
 import ouraLogo from "../../public/oura-logo.png";
 import zoteroLogo from "../../public/zotero-logo.svg";
+import { useEffect } from "react";
+import Link from "next/link";
 
 type BlobProps = {
   delay?: string;
@@ -59,7 +63,9 @@ export default function Home() {
             apps with all your data in one tool.
           </p>
           <div className="flex gap-x-2 gap-y-4 flex-col md:flex-row items-center w-full">
-            <Button size="lg">Try it out</Button>
+            <Link href="https://app.mainframe.so">
+              <Button size="lg">Try it out</Button>
+            </Link>
             <Button className="hidden md:block" variant="link">
               Read our Docs
             </Button>
