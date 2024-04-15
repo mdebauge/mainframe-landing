@@ -56,14 +56,14 @@ export default function Home() {
         <section className="mt-20 xl:mt-8 md:mb-24">
           <div className="flex flex-col items-center">
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold mb-2 text-center w-full tracking-tight">
-              Build your applications
+              Build customized apps
             </h1>
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold mb-6 text-center w-full tracking-tight">
               more <span className="text-emerald-500">efficiently</span>
             </h1>
             <p className="text-xl mb-8 text-center w-1/2">
-              Seamlessly access, transform, deploy data from a single, unified
-              source to accelerate your development.
+              Seamlessly access, transform, and deploy data from a single,
+              unified source to accelerate your development.
             </p>
             <Link href="https://app.mainframe.so">
               <Button size="lg">Try it out</Button>
