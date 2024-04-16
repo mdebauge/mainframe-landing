@@ -1,7 +1,9 @@
 export default function Privacy() {
   return (
-    <section className="mt-4 mb-12 prose">
-      <h1>Privacy Policy for Mainframe</h1>
+    <main className="p-6 md:p-16 xl:p-24 bg-background overflow-hidden">
+      <h1 className="text-4xl font-semibold my-4">
+        Privacy Policy for Mainframe
+      </h1>
       <p>
         At Mainframe, accessible from https://www.mainframe.so, one of our main
         priorities is the privacy of our visitors. This Privacy Policy document
@@ -12,7 +14,7 @@ export default function Privacy() {
         If you have additional questions or require more information about our
         Privacy Policy, do not hesitate to contact us.
       </p>
-      <h2>Log Files</h2>
+      <h2 className="text-2xl my-4">Log Files</h2>
       <p>
         Mainframe follows a standard procedure of using log files. These files
         log visitors when they visit websites. All hosting companies do this and
@@ -29,7 +31,7 @@ export default function Privacy() {
         </a>
         .
       </p>
-      <h2>Cookies and Web Beacons</h2>
+      <h2 className="text-2xl my-4">Cookies and Web Beacons</h2>
       <p>
         Like any other website, Mainframe uses "cookies". These cookies are used
         to store information including visitors' preferences, and the pages on
@@ -37,7 +39,7 @@ export default function Privacy() {
         used to optimize the users' experience by customizing our web page
         content based on visitors' browser type and/or other information.
       </p>
-      <h2>Privacy Policies</h2>
+      <h2 className="text-2xl my-4">Privacy Policies</h2>
       <p>
         You may consult this list to find the Privacy Policy for each of the
         advertising partners of Mainframe.
@@ -55,7 +57,7 @@ export default function Privacy() {
         Note that Mainframe has no access to or control over these cookies that
         are used by third-party advertisers.
       </p>
-      <h2>Third Party Privacy Policies</h2>
+      <h2 className="text-2xl my-4">Third Party Privacy Policies</h2>
       <p>
         Mainframe's Privacy Policy does not apply to other advertisers or
         websites. Thus, we are advising you to consult the respective Privacy
@@ -69,7 +71,7 @@ export default function Privacy() {
         specific web browsers, it can be found at the browsers' respective
         websites.
       </p>
-      <h2>Children's Information</h2>
+      <h2 className="text-2xl my-4">Children's Information</h2>
       <p>
         Another part of our priority is adding protection for children while
         using the internet. We encourage parents and guardians to observe,
@@ -82,18 +84,18 @@ export default function Privacy() {
         encourage you to contact us immediately and we will do our best efforts
         to promptly remove such information from our records.
       </p>
-      <h2>Online Privacy Policy Only</h2>
+      <h2 className="text-2xl my-4">Online Privacy Policy Only</h2>
       <p>
         This Privacy Policy applies only to our online activities and is valid
         for visitors to our website with regards to the information that they
         shared and/or collect in Mainframe. This policy is not applicable to any
         information collected offline or via channels other than this website.
       </p>
-      <h2>Consent</h2>
+      <h2 className="text-2xl my-4">Consent</h2>
       <p>
         By using our website, you hereby consent to our Privacy Policy and agree
         to its Terms and Conditions.
       </p>{" "}
-    </section>
+    </main>
   );
 }
