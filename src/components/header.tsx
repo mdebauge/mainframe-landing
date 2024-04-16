@@ -25,7 +25,7 @@ export default function Header() {
           </svg>
         </Link>
         <div className="hidden md:block">
-          <ul className="flex items-center gap-x-4 hidden">
+          <ul className="items-center gap-x-4 hidden">
             <li>
               <Button variant="ghost">Docs</Button>
             </li>

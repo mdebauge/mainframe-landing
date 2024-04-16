@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import dataScreen from "../../public/Data.png";
 import { motion, useScroll, useTransform } from "framer-motion";

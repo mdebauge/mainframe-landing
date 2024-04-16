@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import playgroundScreen from "../../public/Playground.png";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { use } from "react";
 
 export default function PlaygroundScreenshot() {
   const { scrollY } = useScroll();

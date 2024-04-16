@@ -1,5 +1,3 @@
-"use client";
-
 import { Button } from "@/components/ui/button";
 import Image, { StaticImageData } from "next/image";
 import Step from "@/components/step";
