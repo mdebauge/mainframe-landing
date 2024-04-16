@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import Image, { StaticImageData } from "next/image";
 import Step from "@/components/step";
 import Link from "next/link";
+import DataScreenshot from "@/components/data-screenshot";
+import PlaygroundScreenshot from "@/components/playground-screenshot";
 
 import monitor from "../../public/mainframe-monitor.svg";
 import connectData from "../../public/connect-data.png";
@@ -15,8 +17,7 @@ import pelotonLogo from "../../public/peloton-logo.jpg";
 import togglLogo from "../../public/toggl-logo.png";
 import ouraLogo from "../../public/oura-logo.png";
 import zoteroLogo from "../../public/zotero-logo.svg";
-import DataScreenshot from "@/components/data-screenshot";
-import PlaygroundScreenshot from "@/components/playground-screenshot";
+import playgroundScreenshot from "../../public/Playground.png";
 
 type BlobProps = {
   delay?: string;
@@ -68,7 +69,12 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="relative h-[44vw] w-full mt-32">
+          <div className="sm:relative sm:h-[44vw] w-full my-24 sm:mt-32">
+            <Image
+              className="sm:hidden drop-shadow-[8px_8px_25px_rgba(0,0,0,0.06)]"
+              src={playgroundScreenshot}
+              alt="Playground screenshot"
+            />
             <DataScreenshot />
             <PlaygroundScreenshot />
           </div>
