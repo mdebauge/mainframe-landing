@@ -18,6 +18,7 @@ import togglLogo from "../../public/toggl-logo.png";
 import ouraLogo from "../../public/oura-logo.png";
 import zoteroLogo from "../../public/zotero-logo.svg";
 import playgroundScreenshot from "../../public/Playground.png";
+import dataScreenshot from "../../public/Data.png";
 
 type BlobProps = {
   delay?: string;
@@ -70,6 +71,11 @@ export default function Home() {
           </div>
 
           <div className="sm:relative sm:h-[44vw] w-full my-24 sm:mt-32">
+            <Image
+              className="sm:hidden mb-8 drop-shadow-[8px_8px_25px_rgba(0,0,0,0.06)]"
+              src={dataScreenshot}
+              alt="Data screenshot"
+            />
             <Image
               className="sm:hidden drop-shadow-[8px_8px_25px_rgba(0,0,0,0.06)]"
               src={playgroundScreenshot}
