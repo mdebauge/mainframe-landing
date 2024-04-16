@@ -134,7 +134,7 @@ export default function Home() {
               product, or suggest how we can improve things.
             </p>
             <div className="flex gap-x-2 gap-y-4 flex-col md:flex-row items-center w-full">
-              <Link href="https://app.mainframe.so">
+              <Link href="https://discord.gg/HUS4y59Dxw">
                 <Button variant="outline" size="lg">
                   <svg
                     className="fill-primary w-[16px] h-[16px]"
