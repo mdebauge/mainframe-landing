@@ -59,7 +59,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold mb-6 text-center w-full tracking-tight">
               more <span className="text-emerald-500">efficiently</span>
             </h1>
-            <p className="text-xl mb-8 text-center w-1/2">
+            <p className="text-xl mb-8 text-center lg:w-1/2">
               Seamlessly access, transform, and deploy data from a single,
               unified source to accelerate your development.
             </p>
