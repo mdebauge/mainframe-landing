@@ -62,8 +62,8 @@ export default function Home() {
               more <span className="text-emerald-500">efficiently</span>
             </h1>
             <p className="text-xl mb-8 text-center lg:w-1/2">
-              Seamlessly access, transform, and deploy data from a single,
-              unified source to accelerate your development.
+              Mainframe helps you seamlessly access, transform, and deploy data
+              from a single, unified source to accelerate your development.
             </p>
             <Link href="https://app.mainframe.so">
               <Button size="lg">Try it out</Button>
