@@ -3,9 +3,8 @@
 import { Button } from "@/components/ui/button";
 import Image, { StaticImageData } from "next/image";
 import Step from "@/components/step";
+import Link from "next/link";
 
-import dataScreen from "../../public/Data.png";
-import playgroundScreen from "../../public/Playground.png";
 import monitor from "../../public/mainframe-monitor.svg";
 import connectData from "../../public/connect-data.png";
 import database from "../../public/database.png";
@@ -18,7 +17,8 @@ import pelotonLogo from "../../public/peloton-logo.jpg";
 import togglLogo from "../../public/toggl-logo.png";
 import ouraLogo from "../../public/oura-logo.png";
 import zoteroLogo from "../../public/zotero-logo.svg";
-import Link from "next/link";
+import DataScreenshot from "@/components/data-screenshot";
+import PlaygroundScreenshot from "@/components/playground-screenshot";
 
 type BlobProps = {
   delay?: string;
@@ -70,13 +70,9 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="relative h-[45vw] w-full mt-28">
-            <div className="absolute w-9/12 -rotate-[5deg] -left-[5%] drop-shadow-[8px_8px_25px_rgba(0,0,0,0.06)]">
-              <Image src={dataScreen} alt="Data screenshot" />
-            </div>
-            <div className="absolute w-[80%] rotate-[9deg] -right-[12%] drop-shadow-[8px_8px_25px_rgba(0,0,0,0.06)]">
-              <Image src={playgroundScreen} alt="Playground screenshot" />
-            </div>
+          <div className="relative h-[44vw] w-full mt-32">
+            <DataScreenshot />
+            <PlaygroundScreenshot />
           </div>
         </section>
         <section className="mb-20">
