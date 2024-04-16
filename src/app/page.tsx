@@ -4,6 +4,7 @@ import Step from "@/components/step";
 import Link from "next/link";
 import DataScreenshot from "@/components/data-screenshot";
 import PlaygroundScreenshot from "@/components/playground-screenshot";
+import { ArrowRight } from "lucide-react";
 
 import monitor from "../../public/mainframe-monitor.svg";
 import connectData from "../../public/connect-data.png";
@@ -66,7 +67,9 @@ export default function Home() {
               from a single, unified source to accelerate your development.
             </p>
             <Link href="https://app.mainframe.so">
-              <Button size="lg">Try it out</Button>
+              <Button size="lg">
+                Try it out <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
             </Link>
           </div>
 
