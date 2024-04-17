@@ -57,7 +57,7 @@ export default function Home() {
         <section className="mt-20 xl:mt-8 md:mb-24">
           <div className="flex flex-col items-center">
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold mb-2 text-center w-full tracking-tight">
-              Build customized apps
+              Build customized apps test
             </h1>
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold mb-6 text-center w-full tracking-tight">
               more <span className="text-emerald-500">efficiently</span>
