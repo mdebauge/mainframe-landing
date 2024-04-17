@@ -141,8 +141,8 @@ export default function Home() {
             <p className="text-lg mb-6 text-center md:text-left w-full">
               At Mainframe, we're on the move, actively building our product.
               Want to learn more? Dive into our latest updates on our blog or
-              join our Discord to suggest how we can improve things and connect
-              with us and fellow users.
+              join our Discord to connect with us, fellow users, and help shape
+              the product.
             </p>
             <div className="flex gap-x-2 gap-y-4 flex-col md:flex-row items-center w-full">
               <Link href="https://blog.mainframe.so">
