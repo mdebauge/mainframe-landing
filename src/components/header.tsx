@@ -1,12 +1,28 @@
+"use client";
+
 import Link from "next/link";
 import { ModeToggle } from "./mode-toggle";
 import { Button } from "./ui/button";
 import MobileMenu from "./mobile-menu";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+  const [scroll, setScroll] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 50);
+    });
+  }, []);
+
   return (
     <header>
-      <nav className="fixed top-0 left-0 right-0 flex items-center justify-between h-16 px-6 md:px-16 xl:px-24 bg-background md:bg-background/60 md:backdrop-blur-xl z-10">
+      <nav
+        className={`fixed top-0 left-0 right-0 flex items-center justify-between h-16 px-6 md:px-16 xl:px-24 bg-background md:bg-background/60 z-10 ${
+          scroll
+            ? "md:bg-background/60 md:backdrop-blur-xl"
+            : "md:bg-transparent"
+        }`}
+      >
         <Link href="/">
           <svg
             className="fill-primary h-[18px] md:h-[24px]"

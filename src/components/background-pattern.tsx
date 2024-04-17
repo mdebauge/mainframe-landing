@@ -1,6 +1,6 @@
 export default function BackgroundPattern() {
   return (
-    <div className="absolute w-full opacity-5 stroke-primary mt-12">
+    <div className="absolute w-full opacity-5 stroke-primary -mt-8">
       <svg viewBox="0 0 798 798" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_111_3773)">
           <path d="M43.4444 -1H-1V43.4444H43.4444V-1Z" stroke-width="0.5" />
