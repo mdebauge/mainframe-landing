@@ -25,9 +25,11 @@ export default function Header() {
           </svg>
         </Link>
         <div className="hidden md:block">
-          <ul className="items-center gap-x-4 hidden">
+          <ul className="flex items-center gap-x-4">
             <li>
-              <Button variant="ghost">Docs</Button>
+              <Link href="https://blog.mainframe.so/">
+                <Button variant="ghost">Blog</Button>
+              </Link>
             </li>
             <li>
               <Link href="https://discord.gg/HUS4y59Dxw">

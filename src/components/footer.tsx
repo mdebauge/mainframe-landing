@@ -20,6 +20,7 @@ export default function Footer() {
             <Link
               className="inline-flex items-center gap-x-1"
               href="https://github.com/andreterron/mainframe"
+              target="_blank"
             >
               <svg
                 className="fill-muted-foreground w-[16px] h-[16px]"

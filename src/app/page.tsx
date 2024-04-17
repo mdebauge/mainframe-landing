@@ -136,15 +136,22 @@ export default function Home() {
         <section className="flex flex-col md:flex-row md:h-[65vh] mt-20 xl:mt-0 md:mb-24 gap-x-12">
           <div className="md:basis-2/5 flex flex-col justify-center items-start">
             <h1 className="text-2xl md:text-3xl xl:text-4xl font-bold mb-6 text-center md:text-left w-full">
-              Want to learn more?
+              Moving at full speed ahead
             </h1>
             <p className="text-lg mb-6 text-center md:text-left w-full">
-              Join our Discord to learn more, chat with others using the
-              product, or suggest how we can improve things.
+              At Mainframe, we're on the move, actively building our product.
+              Want to learn more? Dive into our latest updates on our blog or
+              join our Discord to suggest how we can improve things and connect
+              with us and fellow users.
             </p>
             <div className="flex gap-x-2 gap-y-4 flex-col md:flex-row items-center w-full">
-              <Link href="https://discord.gg/HUS4y59Dxw">
+              <Link href="https://blog.mainframe.so">
                 <Button variant="outline" size="lg">
+                  Blog
+                </Button>
+              </Link>
+              <Link href="https://discord.gg/HUS4y59Dxw">
+                <Button variant="ghost" size="lg">
                   <svg
                     className="fill-primary w-[16px] h-[16px]"
                     width="16"
