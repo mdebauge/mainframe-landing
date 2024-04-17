@@ -20,6 +20,7 @@ import ouraLogo from "../../public/oura-logo.png";
 import zoteroLogo from "../../public/zotero-logo.svg";
 import playgroundScreenshot from "../../public/Playground.png";
 import dataScreenshot from "../../public/Data.png";
+import BackgroundPattern from "@/components/background-pattern";
 
 type BlobProps = {
   delay?: string;
@@ -52,12 +53,13 @@ function Orb({ image, position }: OrbProps) {
 
 export default function Home() {
   return (
-    <main className="p-6 md:p-16 xl:p-24 bg-background overflow-hidden">
-      <div className="max-w-screen-2xl m-auto">
-        <section className="mt-20 xl:mt-8 md:mb-24">
+    <main className="bg-background overflow-hidden">
+      <BackgroundPattern />
+      <div className="max-w-screen-2xl m-auto p-6 md:p-16 xl:p-24">
+        <section className="relative mt-20 xl:mt-8 md:mb-24">
           <div className="flex flex-col items-center">
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold mb-2 text-center w-full tracking-tight">
-              Build customized apps test
+              Build customized apps
             </h1>
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold mb-6 text-center w-full tracking-tight">
               more <span className="text-emerald-500">efficiently</span>
@@ -88,7 +90,7 @@ export default function Home() {
             <PlaygroundScreenshot />
           </div>
         </section>
-        <section className="mb-20">
+        <section className="relative mb-20">
           <h2 className="text-4xl text-center font-semibold mb-2">
             How it works
           </h2>
