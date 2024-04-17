@@ -1,7 +1,7 @@
 export default function BackgroundPattern() {
   return (
     <div className="absolute w-full opacity-5 stroke-primary -mt-8 hidden md:block">
-      <svg viewBox="0 0 798 798" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 798 738" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_111_3773)">
           <path d="M43.4444 -1H-1V43.4444H43.4444V-1Z" stroke-width="0.5" />
           <path
@@ -1197,76 +1197,10 @@ export default function BackgroundPattern() {
             d="M799 710.111H754.556V754.556H799V710.111Z"
             stroke-width="0.5"
           />
-          <path
-            d="M43.4444 754.556H-1V799H43.4444V754.556Z"
-            stroke-width="0.5"
-          />
-          <path
-            d="M87.8888 754.556H43.4443V799H87.8888V754.556Z"
-            stroke-width="0.5"
-          />
-          <path
-            d="M132.333 754.556H87.8887V799H132.333V754.556Z"
-            stroke-width="0.5"
-          />
-          <path
-            d="M176.778 754.556H132.333V799H176.778V754.556Z"
-            stroke-width="0.5"
-          />
-          <path
-            d="M221.222 754.556H176.778V799H221.222V754.556Z"
-            stroke-width="0.5"
-          />
-          <path
-            d="M265.667 754.556H221.222V799H265.667V754.556Z"
-            stroke-width="0.5"
-          />
-          <path
-            d="M310.111 754.556H265.667V799H310.111V754.556Z"
-            stroke-width="0.5"
-          />
-          <path
-            d="M354.556 754.556H310.111V799H354.556V754.556Z"
-            stroke-width="0.5"
-          />
-          <path d="M399 754.556H354.556V799H399V754.556Z" stroke-width="0.5" />
-          <path
-            d="M443.444 754.556H399V799H443.444V754.556Z"
-            stroke-width="0.5"
-          />
-          <path
-            d="M487.889 754.556H443.444V799H487.889V754.556Z"
-            stroke-width="0.5"
-          />
-          <path
-            d="M532.333 754.556H487.889V799H532.333V754.556Z"
-            stroke-width="0.5"
-          />
-          <path
-            d="M576.778 754.556H532.333V799H576.778V754.556Z"
-            stroke-width="0.5"
-          />
-          <path
-            d="M621.222 754.556H576.778V799H621.222V754.556Z"
-            stroke-width="0.5"
-          />
-          <path
-            d="M665.667 754.556H621.222V799H665.667V754.556Z"
-            stroke-width="0.5"
-          />
-          <path
-            d="M710.111 754.556H665.667V799H710.111V754.556Z"
-            stroke-width="0.5"
-          />
-          <path
-            d="M754.556 754.556H710.111V799H754.556V754.556Z"
-            stroke-width="0.5"
-          />
-          <path d="M799 754.556H754.556V799H799V754.556Z" stroke-width="0.5" />
         </g>
         <defs>
           <clipPath id="clip0_111_3773">
-            <rect width="798" height="798" fill="white" />
+            <rect width="798" height="738" fill="white" />
           </clipPath>
         </defs>
       </svg>
