@@ -49,8 +49,8 @@ export default function FullSpeedSection() {
           Moving at full speed ahead
         </h1>
         <p className="text-lg mb-6 text-center md:text-left w-full">
-          At Mainframe, we're on the move, actively building our product. Want
-          to learn more? Dive into our latest updates on our blog or join our
+          At Mainframe, we're on the move actively building our product. Want to
+          learn more? Dive into our latest updates on our blog or join our
           Discord to connect with us, fellow users, and help shape the product.
         </p>
         <div className="flex gap-x-2 gap-y-4 flex-col md:flex-row items-center w-full">
