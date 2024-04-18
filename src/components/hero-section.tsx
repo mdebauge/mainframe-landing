@@ -63,7 +63,7 @@ export default function HeroSection() {
             variant="secondary"
           >
             <DollarSign className="text-slate-500 w-4 h-4 mr-1" />
-            <span className="text-emerald-500 mx-1">npm</span> create mainframe
+            <span className="text-emerald-500">npm</span>&nbsp;create mainframe
           </Button>
           <p className="basis-1/4 text-xs ml-2 text-muted-foreground">{`${
             copied ? "Copied" : ""

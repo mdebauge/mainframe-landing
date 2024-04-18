@@ -31,7 +31,7 @@ export default function TerminalSection() {
         <div className="flex mb-6 px-6 py-8 items-center rounded-xl bg-slate-900 text-white border-2 border-slate-400 drop-shadow-terminal">
           <DollarSign className="text-slate-500 w-5 h-5 mr-2" />
           <p>
-            <span className="text-green-500">npm</span> create mainframe
+            <span className="text-green-500">npm</span>&nbsp; create mainframe
           </p>
         </div>
         <Button
