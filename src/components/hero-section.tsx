@@ -1,14 +1,40 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, DollarSign } from "lucide-react";
 import Image from "next/image";
 import DataScreenshot from "./data-screenshot";
 import PlaygroundScreenshot from "./playground-screenshot";
+import { DM_Mono } from "next/font/google";
 
 import playgroundScreenshot from "../../public/Playground.png";
 import dataScreenshot from "../../public/Data.png";
+import { useEffect, useState } from "react";
+
+const dmMono = DM_Mono({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export default function HeroSection() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText("npm create mainframe");
+    setCopied(true);
+  };
+
+  const resetCopy = () => {
+    setCopied(false);
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      resetCopy();
+    }, 4000);
+  }, []);
+
   return (
     <section className="relative mt-20 xl:mt-8 md:mb-24">
       <div className="flex flex-col items-center">
@@ -28,6 +54,21 @@ export default function HeroSection() {
             Try it out <ArrowRight className="w-4 h-4 ml-2" />
           </Button>
         </Link>
+        <div className="flex w-full justify-center items-center mt-6">
+          <p className="basis-1/4 text-right">Or run</p>
+          <Button
+            onClick={handleCopy}
+            className={`${dmMono.className} ml-2`}
+            size="sm"
+            variant="secondary"
+          >
+            <DollarSign className="text-slate-500 w-4 h-4 mr-1" />
+            <span className="text-emerald-500 mx-1">npm</span> create mainframe
+          </Button>
+          <p className="basis-1/4 text-xs ml-2 text-muted-foreground">{`${
+            copied ? "Copied" : ""
+          }`}</p>
+        </div>
       </div>
 
       <div className="sm:relative sm:h-[44vw] w-full my-24 sm:mt-32">
