@@ -60,6 +60,7 @@ const config = {
       },
       dropShadow: {
         brutalist: "2px 2px 0 black",
+        terminal: "4px 4px 0 hsl(var(--primary))",
       },
       keyframes: {
         "accordion-down": {

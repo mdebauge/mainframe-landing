@@ -45,9 +45,9 @@ export default function FullSpeedSection() {
   return (
     <section className="flex flex-col md:flex-row md:h-[65vh] mt-20 xl:mt-0 md:mb-24 gap-x-12">
       <div className="md:basis-2/5 flex flex-col justify-center items-start">
-        <h1 className="text-2xl md:text-3xl xl:text-4xl font-bold mb-6 text-center md:text-left w-full">
+        <h2 className="text-2xl md:text-3xl xl:text-4xl font-bold mb-6 text-center md:text-left w-full">
           Moving at full speed ahead
-        </h1>
+        </h2>
         <p className="text-lg mb-6 text-center md:text-left w-full">
           At Mainframe, we're on the move actively building our product. Want to
           learn more? Dive into our latest updates on our blog or join our
