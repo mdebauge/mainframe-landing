@@ -25,9 +25,6 @@ export default function TerminalSection() {
   return (
     <section className="flex items-center justify-between relative py-28 mb-20 gap-x-16">
       <div className="basis-2/5">
-        {/* <h2 className="text-md text-muted-foreground font-medium mb-6 text-center md:text-left w-full">
-          Run the command below to get started:
-        </h2> */}
         <div className="flex mb-6 px-6 py-8 items-center rounded-xl bg-slate-900 text-white border-2 border-slate-400 drop-shadow-terminal">
           <DollarSign className="text-slate-500 w-5 h-5 mr-2" />
           <p>
