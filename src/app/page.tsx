@@ -1,7 +1,3 @@
-import { Button } from "@/components/ui/button";
-import Image, { StaticImageData } from "next/image";
-import Step from "@/components/step";
-import Link from "next/link";
 import BackgroundPattern from "@/components/background-pattern";
 import HeroSection from "@/components/hero-section";
 import HowItWorksSection from "@/components/how-it-works-section";
