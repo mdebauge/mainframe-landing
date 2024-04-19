@@ -23,17 +23,10 @@ export default function HeroSection() {
   const handleCopy = () => {
     navigator.clipboard.writeText("npm create mainframe");
     setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 3000);
   };
-
-  const resetCopy = () => {
-    setCopied(false);
-  };
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      resetCopy();
-    }, 4000);
-  }, []);
 
   return (
     <section className="relative mt-20 xl:mt-8 md:mb-24">
