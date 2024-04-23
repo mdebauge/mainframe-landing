@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 export default function MobileMenu() {
   return (
@@ -22,13 +23,14 @@ export default function MobileMenu() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem>
-          <Button variant="link">Docs</Button>
+          <Link href="https://blog.mainframe.so/">
+            <Button variant="ghost">Blog</Button>
+          </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <Button variant="link">Community</Button>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <Button variant="link">Sign up</Button>
+          <Link href="https://discord.gg/HUS4y59Dxw">
+            <Button variant="ghost">Community</Button>
+          </Link>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
