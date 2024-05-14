@@ -43,12 +43,17 @@ export default function Header() {
         <div className="hidden md:block">
           <ul className="flex items-center gap-x-4">
             <li>
-              <Link href="https://blog.mainframe.so/">
-                <Button variant="ghost">Blog</Button>
-              </Link>
+              <a target="_blank" href="https://docs.mainframe.so/">
+                <Button variant="ghost">Docs</Button>
+              </a>
             </li>
             <li>
-              <Link href="https://discord.gg/HUS4y59Dxw">
+              <a target="_blank" href="https://blog.mainframe.so/">
+                <Button variant="ghost">Blog</Button>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://discord.gg/HUS4y59Dxw">
                 <Button variant="ghost">
                   <svg
                     className="fill-primary w-[16px] h-[16px]"
@@ -61,7 +66,7 @@ export default function Header() {
                   </svg>
                   &nbsp; Community
                 </Button>
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
