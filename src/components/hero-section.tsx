@@ -32,15 +32,16 @@ export default function HeroSection() {
     <section className="relative mt-20 xl:mt-8 md:mb-24">
       <div className="flex flex-col items-center">
         <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold mb-2 text-center w-full tracking-tight">
-          Centralize your <span className="text-emerald-500">data</span>
+          An open source tool to <br></br>
+          <span className="text-emerald-500">sync data</span> from other apps
         </h1>
-        <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold mb-6 text-center w-full tracking-tight">
+        {/* <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold mb-6 text-center w-full tracking-tight">
           Build <span className="text-emerald-500">apps</span> with a unified
           API
-        </h1>
+        </h1> */}
         <p className="text-xl mb-8 text-center lg:w-1/2">
-          Mainframe syncs with other services and lets you build apps with their
-          data. No authentication setup required.
+          Mainframe lets your users sync data from other apps so you can build
+          with their data through a unified API.
         </p>
         <Link href="https://app.mainframe.so">
           <Button size="lg">
