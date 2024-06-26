@@ -97,16 +97,18 @@ export default function Header() {
                     </defs>
                   </svg>
                   &nbsp; Github
-                  <Badge variant="outline" className="ml-1">
-                    <Star
-                      size={16}
-                      fill="#fbbf24"
-                      stroke="#020617"
-                      strokeWidth={1}
-                      className="mr-1"
-                    />
-                    {stars}
-                  </Badge>
+                  {stars && (
+                    <Badge variant="outline" className="ml-1">
+                      <Star
+                        size={16}
+                        fill="#fbbf24"
+                        stroke="#020617"
+                        strokeWidth={1}
+                        className="mr-1"
+                      />
+                      {stars}
+                    </Badge>
+                  )}
                 </Button>
               </a>
             </li>
