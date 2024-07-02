@@ -74,7 +74,10 @@ export default function Header() {
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://discord.gg/HUS4y59Dxw">
+              <a
+                target="_blank"
+                href="https://github.com/andreterron/mainframe"
+              >
                 <Button variant="ghost">
                   <svg
                     className="fill-primary w-[16px] h-[16px]"
