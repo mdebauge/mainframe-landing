@@ -105,7 +105,7 @@ export default function Header() {
                       <Star
                         size={16}
                         fill="#fbbf24"
-                        stroke="#020617"
+                        stroke="#000000"
                         strokeWidth={1}
                         className="mr-1"
                       />
